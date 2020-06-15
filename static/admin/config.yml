@@ -1,29 +1,33 @@
 backend:
-  name: github
-  repo: Dogson/nervy
+  name: git-gateway
+  branch: master
 
-media_folder: static/assets
-public_folder: assets
-#logo_url: https://www.campusfrancosenegalais.org/assets/images/logoCFS.png
-#site_url: https://www.campusfrancosenegalais.org/
-#display_url: https://www.campusfrancosenegalais.org/
-
-slug:
-  encoding: ascii
-  clean_accents: true
+media_folder: static/img
+public_folder: /img
 
 collections:
-  - label: Pages
-    name: pages
-    editor:
-      preview: false
+  - name: "blog"
+    label: "Blog"
+    folder: "src/pages/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "blog-post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Cover Image", name: "cover_image", widget: "image"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", required: false, widget: "list"}
+
+  - name: "pages"
+    label: "Pages"
     files:
-      #Page d'accueil
-      - label: Page d'accueil
-        description: "Images / Texte de la page d'accueil"
-        name: homepage
-        file: src/content/pages/homepage.md
+      - file: "src/pages/kdopak-to-pise/index.md"
+        label: "About"
+        name: "about"
         fields:
-          - { name: "type", widget: "hidden", label: "Type", default: "homepage" }
-          - { name: title, label: Titre, required: true }
-          - { name: backgroundImage, label: Image de fond, widget: image, required: true }
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "about-page"}
+          - {label: "Full image", name: "cover_image", widget: "image"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
