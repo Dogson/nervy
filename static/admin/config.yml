@@ -2,8 +2,8 @@ backend:
   name: github
   repo: Dogson/nervy
 
-media_folder: static/assets
-public_folder: assets
+media_folder: static/img
+public_folder: img
 #logo_url: https://www.campusfrancosenegalais.org/assets/images/logoCFS.png
 #site_url: https://www.campusfrancosenegalais.org/
 #display_url: https://www.campusfrancosenegalais.org/
@@ -25,5 +25,5 @@ collections:
         file: src/content/pages/homepage.md
         fields:
           - { name: "type", widget: "hidden", label: "Type", default: "homepage" }
-          - { name: title, label: Titre, required: true }
-          - { name: backgroundImage, label: Image de fond, widget: image, required: true }
+          - { name: title, label: Titre }
+          - { name: "backgroundImage", label: "Image de fond", widget: "image" }

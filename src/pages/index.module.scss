@@ -1,1 +1,10 @@
 @import "../styles/global";
+
+.homepageContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-position: bottom center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  opacity: 0.1;
+}
