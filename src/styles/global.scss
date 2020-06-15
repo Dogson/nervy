@@ -1,0 +1,47 @@
+/**
+  GLOBAL VARIABLES
+ */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500");
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800&display=swap');
+
+//layout
+$containerWidth: 1000px;
+
+//font weights :
+$weight-light: 300;
+$weight-regular: normal;
+$weight-bold: 500;
+$weight-bolder: 600;
+
+//text size
+$size-smaller: 12px;
+$size-small: 15px;
+$size-normal: 18px;
+$size-big: 20px;
+$size-bigger: 24px;
+
+//colors
+$background-main: #8fcee6;
+$background-yellow: #ffd400;
+$background-secondary: #F2F2F2;
+$color-main: #162477;
+$color-agronomy: #2AA542;
+$color-digital: #3870C1;
+$color-engineering: #ED1A24;
+
+//media sizes
+$media-tablet: "screen and (max-width : 1020px)";
+$media-phone: "screen and (max-width : 600px)";
+
+body {
+  margin: 0;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+  font-weight: $weight-light;
+  font-size: $size-normal;
+  background-color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
