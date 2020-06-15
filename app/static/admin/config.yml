@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: Dogson/nervy
+
+media_folder: static/assets/images
+public_folder: assets/images
+#logo_url: https://www.campusfrancosenegalais.org/assets/images/logoCFS.png
+#site_url: https://www.campusfrancosenegalais.org/
+#display_url: https://www.campusfrancosenegalais.org/
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - label: Pages
+      name: pages
+      editor:
+        preview: false
+      files:
+        #Page d'accueil
+        - label: Page d'accueil
+          description: "Images / Texte de la page d'accueil"
+          name: homepage
+          file: src/content/pages/homepage.md
+          fields:
+            - { name: "type", widget: "hidden", label: "Type", default: "homepage" }
+            - { name: title, label: Titre, required: true }
