@@ -71,4 +71,20 @@ pictures:
     picture: img/2700223e-773a-4e7e-9400-31e61e7129e9.jpg
   - label: "2ème étage : Encore une petite bibliothèque à côté des chambres"
     picture: img/78fd5f01-d48e-48f7-9eb4-29102c59dc1e.jpg
+  - label: "SDB 1er étage : les enfants ont aussi leur lavabo !"
+    picture: img/edfa0322-683f-4410-bfe2-6dc958678465.webp
+  - label: SDB 1er étage
+    picture: img/b7d2c67c-d099-4be2-be88-aaa68d781505.jpg
+  - label: SDB 2ème étage
+    picture: img/cb5727e8-2d1b-4a04-a571-296dac7beea0.jpg
+  - label: SDB 1er étage
+    picture: img/b58f0626-8154-4cc3-807c-baf4879a6aee.webp
+  - picture: img/6e3ea584-bfa1-47dc-9a3a-a6cb4635a658.webp
+    label: "SDB 2ème étage : grande cabine de douche"
+  - label: La terrasse et sa pergola avec l'accès à la cuisine et au séjour. Au
+      dessus, on aperçoit la terrasse du 1er étage qui donne sur la mezzanine.
+    picture: img/cab5cd4f-404d-456c-ae97-d1f4c80dcaca.webp
+  - label: Orientée Sud Ouest, la maison vous offre de splendides couchers de soleil.
+    picture: img/cd49d62c-6f6c-45d0-b4aa-d8355e7a4af2.webp
+  - picture: img/5632bc80-d519-4f32-bdeb-6fcd56abb180.webp
 ---
