@@ -58,7 +58,7 @@ h1 {
   margin: 0;
 
   &.small {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 
@@ -69,15 +69,10 @@ h2 {
   margin-top: 10px;
   font-size: 25px;
   letter-spacing: 3px;
-}
 
-h3 {
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-weight: $weight-light;
-  margin-top: 10px;
-  font-size: 25px;
-  letter-spacing: 3px;
+  &.small {
+    font-size: 18px;
+  }
 }
 
 strong {

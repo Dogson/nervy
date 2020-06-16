@@ -6,7 +6,7 @@
   background-position: bottom center;
   background-repeat: repeat-y;
   background-size: cover;
-  background-image: linear-gradient($freeze-purple 0%, $freeze-purple 20%,  black 40%) !important;
+  background-color: black !important;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -20,8 +20,15 @@
 
 .pageTitle {
   text-align: center;
-  color: $russet-red;
+  color: $freeze-purple;
   margin-top: 70px;
+  margin-bottom: 20px;
+  padding: 30px 75px;
+  background-color: rgba($russet-red, 0.8);
+}
+
+h2 {
+  color: $ice-cold;
 }
 
 .galleryCarousel {

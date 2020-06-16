@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./link.module.scss"
 import {Link as GatsbyLink} from "gatsby";
+import cx from "classnames";
 
 const LinkWithSubText = ({mainText, sideText}) => {
     return <nav className={classes.clEffect9}>
@@ -8,10 +9,10 @@ const LinkWithSubText = ({mainText, sideText}) => {
     </nav>
 }
 
-const Link = ({mainText, external, to}) => {
+const Link = ({mainText, external, to, bright}) => {
 
     return <nav className={classes.clEffect4}>
-        <div className={classes.link}>
+        <div className={cx(classes.link, {[classes.bright]: bright})}>
             {
                 external ?
                     <a target="_blank" rel="noopener noreferrer" href={to}>{mainText}</a> :

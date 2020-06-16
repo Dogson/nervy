@@ -89,13 +89,12 @@
 }
 
 
-
 /* Effect 4: bottom border enlarge */
 .clEffect4 .link {
   padding: 0 0 10px;
   position: relative;
   //font-family: 'Raleway', sans-serif;
-font-family: 'Cinzel', serif;
+  font-family: 'Cinzel', serif;
 }
 
 .clEffect4 .link::after {
@@ -113,6 +112,10 @@ font-family: 'Cinzel', serif;
   -webkit-transform: translateY(-5px);
   -moz-transform: translateY(-5px);
   transform: translateY(-5px);
+}
+
+.clEffect4 .link.bright::after {
+  background: $ice-cold;
 }
 
 .clEffect4 .link:hover::after,

@@ -18,9 +18,7 @@ const GalleryPage = ({data: {gallery}}) => {
         }
     });
 
-    console.log(loaded);
-
-    return <Layout>
+    return <Layout brightMenu>
         <BackgroundImage
             className={classes.galleryContainer}
             Tag="div"
@@ -32,10 +30,9 @@ const GalleryPage = ({data: {gallery}}) => {
                 <h1 className={classes.small}>
                     Les Prés
                 </h1>
-                <h3>
-                    Gallerie
-                </h3>
             </div>
+
+            <h2 className={classes.small}>Gallerie</h2>
 
             <div className={cx(classes.galleryCarousel, {[classes.visible]: loaded})}>
                 <Carousel pictures={pictures}/>
