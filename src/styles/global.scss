@@ -1,8 +1,8 @@
 /**
   GLOBAL VARIABLES
  */
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500");
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300&display=swap');
 
 //layout
 $containerWidth: 1000px;
@@ -19,15 +19,14 @@ $size-small: 15px;
 $size-normal: 18px;
 $size-big: 20px;
 $size-bigger: 24px;
+$size-title: 70px;
 
 //colors
-$background-main: #8fcee6;
-$background-yellow: #ffd400;
-$background-secondary: #F2F2F2;
-$color-main: #162477;
-$color-agronomy: #2AA542;
-$color-digital: #3870C1;
-$color-engineering: #ED1A24;
+$ice-cold: #a0d2eb;
+$freeze-purple: #e5eaf5;
+$medium-purple: #d0bdf4;
+$purple-pain: #8458B3;
+$russet-red: #7B3E19;
 
 //media sizes
 $media-tablet: "screen and (max-width : 1020px)";
@@ -38,7 +37,7 @@ body {
 }
 
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: $weight-light;
   font-size: $size-normal;
   background-color: white;
@@ -53,166 +52,21 @@ a {
 }
 
 h1 {
-  font-weight: $weight-regular;
-  font-size: $size-normal;
+  font-weight: 700;
+  font-size: $size-title;
+  font-family: 'Cinzel', serif;
   margin: 0;
-  font-family: 'Work Sans', sans-serif;
+}
 
+h2 {
+  font-weight: 400;
+  font-size: $size-bigger;
+  //font-family: 'Cinzel', serif;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  margin: 0;
 }
 
 strong {
   font-weight: $weight-regular;
-}
-
-.flexColumn {
-  display: flex;
-  flex-direction: column;
-}
-
-.flexRow {
-  display: flex;
-  flex-direction: row;
-}
-
-.flexSpaceBetween {
-  justify-content: space-between;
-}
-
-.flexCenter {
-  justify-content: center;
-}
-
-.flexAlignCenter {
-  align-items: center;
-}
-
-.sectionTitleMain {
-  background: $color-main;
-  color: white;
-  text-transform: uppercase;
-  font-size: $size-bigger;
-  font-weight: $weight-bold;
-  padding: 15px 60px;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.sectionTitleSecondary {
-  color: $color-main;
-  font-size: $size-bigger;
-  font-weight: $weight-bold;
-  padding: 15px 0;
-}
-
-.btn {
-  @extend .flexRow;
-  @extend .flexAlignCenter;
-  @extend .flexCenter;
-  position: relative;
-  background-color: transparent;
-  border: 1px solid white;
-  color: white;
-  padding: 10px 30px;
-  width: 300px;
-  font-weight: $weight-light;
-  font-size: $size-small;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0 5px;
-  border-radius: 5px !important;
-
-  &:hover {
-    background-color: rgba(white, 0.8);
-    border: 1px solid rgba(white, 0.8);
-    color: $color-main;
-    font-weight: $weight-regular;
-  }
-
-  &.important {
-    font-weight: $weight-regular;
-    font-size: $size-normal;
-    padding: 15px 40px;
-    color: $color-main;
-    border-color: $color-main;
-
-    &:hover {
-      background-color: $color-main;
-      color: $background-main;
-      //border: none;
-    }
-  }
-
-  &.small {
-    width: 200px;
-  }
-
-  &.colorful {
-    background-color: rgba(white, 0.8);
-    border: 1px solid $color-main;
-    color: $color-main;
-
-    &:hover {
-      background-color: $color-main;
-      border: 1px solid white;
-      color: white;
-    }
-  }
-
-  &.colorfulTransparent {
-    background-color: transparent;
-    border: 1px solid $color-main;
-    color: $color-main;
-
-    &:hover{
-      background-color: $color-main;
-      border: 1px solid $background-main;
-      color: $background-main;
-    }
-  }
-
-  &.square {
-    border-radius: 0;
-  }
-}
-
-@media #{$media-phone} {
-  .btn {
-    width: 260px;
-    min-height: 30px;
-
-    &.small {
-      width: 260px;
-      min-height: 25px;
-    }
-  }
-}
-
-form {
-  input[type="text"], input[type="email"], textarea {
-    //outline: none;
-    padding: 12px 15px;
-    box-shadow: none;
-    border: 1px solid lightgray;
-    font-family: 'Roboto', sans-serif;
-    font-size: $size-small;
-    outline: none;
-    border-radius: 5px;
-
-    &:focus {
-      outline: 1px solid $background-main;
-    }
-  }
-}
-
-.ReactModal__Overlay {
-  opacity: 0;
-  transition: opacity 500ms ease-in-out;
-}
-
-.ReactModal__Overlay--after-open{
-  opacity: 1;
-}
-
-.ReactModal__Overlay--before-close{
-  opacity: 0;
 }

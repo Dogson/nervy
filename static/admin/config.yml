@@ -25,5 +25,4 @@ collections:
         file: src/content/pages/homepage.md
         fields:
           - { name: "type", widget: "hidden", label: "Type", default: "homepage" }
-          - { name: title, label: Titre }
           - { name: "backgroundImage", label: "Image de fond", widget: "image" }
