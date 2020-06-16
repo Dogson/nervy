@@ -4,12 +4,13 @@ import {Carousel as GatsbyCarousel} from 'react-responsive-carousel';
 import Img from "gatsby-image"
 import classes from "./carousel.module.scss";
 import cx from "classnames";
+import "./carousel.css";
 
 const Carousel = ({pictures}) => {
     const renderThumbs = () => {
         return pictures.map((picture) => (
             <div className={classes.thumbnail}>
-                <Img fluid={picture.img}/>
+                <Img fluid={picture.img} className={classes.thumbImg}/>
             </div>
         ))
 
@@ -23,7 +24,7 @@ const Carousel = ({pictures}) => {
                         <div className={classes.image}>
                             <Img fluid={img} className={classes.imageGatsby}/>
                         </div>
-                        {label && <p className={cx("legend", classes.label)}>{label}</p>}
+                        {label && <p className={classes.label}>{label}</p>}
                     </div>
                 ))
             }

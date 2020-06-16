@@ -1,0 +1,28 @@
+.carousel .slide {
+    background: none;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel .thumb {
+    border: 2px solid #e5eaf5;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(0px);
+}
+
+.carousel .thumb:hover {
+    border: 2px solid #7B3E19;
+    transform: translateY(-3px);
+}
+
+.carousel .thumb:focus {
+    border: 2px solid #e5eaf5;
+    outline: none;
+}
+
+.carousel .thumb.selected, .carousel .thumb:hover {
+    border: 2px solid #7B3E19;
+}

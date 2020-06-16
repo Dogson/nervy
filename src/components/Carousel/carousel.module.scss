@@ -3,10 +3,16 @@
 .thumbnail {
   cursor: pointer;
   height: 40px;
+
+  .thumbImg {
+    height: 40px;
+  }
 }
 
 .label {
   opacity: 1 !important;
+  color: $freeze-purple;
+  font-size: $size-small;
 }
 
 .imageContainer {
@@ -22,5 +28,4 @@
 
 .imageGatsby {
   margin: auto;
-  background-color: black;
 }
