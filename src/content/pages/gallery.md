@@ -87,4 +87,31 @@ pictures:
   - label: Orientée Sud Ouest, la maison vous offre de splendides couchers de soleil.
     picture: img/cd49d62c-6f6c-45d0-b4aa-d8355e7a4af2.webp
   - picture: img/5632bc80-d519-4f32-bdeb-6fcd56abb180.webp
+  - label: Le terrain arboré
+    picture: img/36b16bdf-a9d3-4ccc-abd0-4b1c2ac00e25.webp
+  - picture: img/7148a3d5-8839-48cd-8369-3f250ad9be4e.webp
+    label: A la saison des récoltes, vous pourrez ramasser et déguster les noix de
+      notre noyer et les burlats de notre cerisier.
+  - picture: img/a3904fbc-d89d-4719-bbec-aff7a712320c.webp
+    label: Coucher de soleil sur la piscine
+  - picture: img/4820641d-5730-4da0-aad0-46f3840b4a12.jpg
+  - picture: img/710d9032-a2a6-4a4e-b0f2-89eeb1f7c944.webp
+    label: La piscine
+  - label: La piscine
+    picture: img/a5e8bb50-3bb2-491c-8f79-c081951a0b74.webp
+  - label: Le mas vu du jardin
+    picture: img/fd934256-16ef-4713-93a2-d179eae2db8f.webp
+  - label: Côté cuisine
+    picture: img/3adf7b0f-4617-43bd-b5b6-235afc7d19cb.webp
+  - label: Vue de la terrasse
+    picture: img/a601d6b1-0402-48e7-aacb-d201a297f18b.jpg
+  - picture: img/52547dfa-e991-4524-980e-5c39a20cfd15.jpg
+    label: "Le pic de St Romain à 30 min à pied offre une vue à 360° : une balade
+      qui ravira petits et grands"
+  - picture: img/0e3066e4-c6a2-46a0-bb4a-b4320856ee9b.jpg
+    label: La chapelle du pic
+  - picture: img/f224b46b-4f2c-4ed8-8cb9-8b9ba78f0b5a.webp
+    label: La table d'orientation du pic
+  - label: De nombreux chemins de randonnées sont balisés
+    picture: img/c69c84b7-3c5e-4944-a814-3ba77ce20c43.webp
 ---
