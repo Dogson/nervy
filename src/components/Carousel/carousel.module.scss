@@ -1,8 +1,12 @@
 @import "../../styles/global";
 
 .thumbnail {
-  width: 44px;
-  height: 33px;
+  cursor: pointer;
+  height: 40px;
+}
+
+.label {
+  opacity: 1 !important;
 }
 
 .imageContainer {

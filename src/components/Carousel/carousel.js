@@ -3,6 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a lo
 import {Carousel as GatsbyCarousel} from 'react-responsive-carousel';
 import Img from "gatsby-image"
 import classes from "./carousel.module.scss";
+import cx from "classnames";
 
 const Carousel = ({pictures}) => {
     const renderThumbs = () => {
@@ -22,7 +23,7 @@ const Carousel = ({pictures}) => {
                         <div className={classes.image}>
                             <Img fluid={img} className={classes.imageGatsby}/>
                         </div>
-                        {label && <p className="legend">{label}</p>}
+                        {label && <p className={cx("legend", classes.label)}>{label}</p>}
                     </div>
                 ))
             }
