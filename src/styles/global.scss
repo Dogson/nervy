@@ -56,15 +56,28 @@ h1 {
   font-size: $size-title;
   font-family: 'Cinzel', serif;
   margin: 0;
+
+  &.small {
+    font-size: 50px;
+  }
 }
 
 h2 {
-  font-weight: 400;
-  font-size: $size-bigger;
-  //font-family: 'Cinzel', serif;
+  text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
-  font-style: italic;
-  margin: 0;
+  font-weight: $weight-light;
+  margin-top: 10px;
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-weight: $weight-light;
+  margin-top: 10px;
+  font-size: 25px;
+  letter-spacing: 3px;
 }
 
 strong {

@@ -1,0 +1,42 @@
+@import "../styles/global";
+
+.galleryContainer {
+  width: 100%;
+  min-height: 100vh;
+  background-position: bottom center;
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-image: linear-gradient($freeze-purple 0%, $russet-red 30%) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  &:before {
+    opacity: 0.9 !important;
+    filter: blur(1px);
+  }
+}
+
+.pageTitle {
+  text-align: center;
+  color: $russet-red;
+  margin-top: 70px;
+}
+
+.galleryCarousel {
+  opacity: 0;
+  background-color: rgba(black, 0.85);
+  margin-bottom: 50px;
+  width: 95%;
+  min-width: 800px;
+  padding: 10px;
+  flex: 1;
+  transition: all 0.6s ease-in-out 1.7s;
+  transform: translateY(70px);
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

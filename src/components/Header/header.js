@@ -11,7 +11,7 @@ const Header = () => {
             <Link mainText="Présentation" to={"/presentation"}/>
         </div>
         <div className={classes.menuItem}>
-            <Link mainText="Gallerie" to={"/gallerie"}/>
+            <Link mainText="Gallerie" to={"/gallery"}/>
         </div>
         <div className={classes.menuItem}>
             <Link mainText="Réserver" to={"https://www.airbnb.fr/rooms/40504440"} external/>
