@@ -26,3 +26,15 @@ collections:
         fields:
           - { name: "type", widget: "hidden", label: "Type", default: "homepage" }
           - { name: "backgroundImage", label: "Image de fond", widget: "image" }
+      - label: Gallerie
+        description: "Images et légendes de la gallerie"
+        name: gallery
+        file: src/content/pages/gallery.md
+        fields:
+          - { name: "type", widget: "hidden", label: "Type", default: "gallery" }
+          - name: "pictures"
+            label: "Photos"
+            widget: "list"
+            fields:
+              - {name: "picture", widget: "image", label: "Photo"}
+              - {name: "label", label: "Légende"}
