@@ -37,4 +37,4 @@ collections:
             widget: "list"
             fields:
               - {name: "picture", widget: "image", label: "Photo"}
-              - {name: "label", label: "Légende"}
+              - {name: "label", label: "Légende", required: false}
