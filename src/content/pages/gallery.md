@@ -32,4 +32,43 @@ pictures:
     label: La table de la cuisine a une rallonge centrale (pour 8/10 personnes)
   - picture: img/a173b418-7ffb-4d68-86bd-fca2296570f5.webp
   - picture: img/1594ff47-4a07-4b5a-8730-65d2d59d3e2e.webp
+  - label: "Pour mitonner de bons petits plats : 2 feux gaz et 2 plaques à induction"
+    picture: img/a7517ff7-3001-4dbe-98b7-5a49a09beb24.webp
+  - picture: img/e40d6c2c-9ceb-4745-86ec-7a3417273dfe.webp
+    label: Passe-plat entre la cuisine et le séjour
+  - picture: img/f80d4be9-5b8a-42d7-9caa-728b0a8f23f7.webp
+    label: L'entrée de la maison pour ranger vestes et chaussures.
+  - picture: img/393bdd90-d9f2-479d-9c6e-64c8e221385f.webp
+    label: La mezzanine dessert les 3 chambres du 1er étage.
+  - picture: img/f4029c0f-a56b-451c-87b8-5c1ec9bf34fe.webp
+    label: L'entrée de la maison pour ranger vestes et chaussures.
+  - picture: img/c95115d3-2070-40e9-b201-b556e09a0e72.webp
+  - picture: img/7f7022b2-3491-45e5-8fd6-5a99c4a7ef9a.webp
+    label: Le coin lecture sur la mezzanine avec sa collection de BD
+  - label: Accès à la SDB et au 2ème étage depuis la mezzanine.
+    picture: img/6fea8e36-5191-41dc-8c13-9d5d412bb902.webp
+  - label: L'Afrique s'invite dans notre mas ardéchois...
+    picture: img/98bf60a5-349d-455f-b2e7-4788acb53bcc.webp
+  - label: "Chambre 1 (1er étage) : 1 lit 160cm"
+    picture: img/b378a5a8-5d2c-4ebc-891b-6e5a9d5d3584.webp
+  - label: "Chambre 1 (1er étage) : 1 lit 160cm"
+    picture: img/1c42d931-c549-4d0e-b312-0e0d3caaea0a.jpg
+  - picture: img/069ea454-4676-424f-bab1-c24f52eb56de.webp
+    label: "Chambre 2 (1er étage) : 1 lit 160cm et 1 lit 90cm (plus 1 lit tiroir
+      pour enfant)"
+  - picture: img/6b6bfa33-58a2-47b9-8ca7-4b54377a0427.jpg
+    label: "Chambre 2 (1er étage) : 1 lit 160cm et 1 lit 90cm (plus 1 lit tiroir
+      pour enfant)"
+  - picture: img/ced2b02d-1230-4cd2-9c7a-d1ca37970297.webp
+    label: "Chambre 3 (1er étage): 1 lit 140cm"
+  - picture: img/52846b84-5ad3-468d-a4bf-57036a6226d9.webp
+    label: "Chambre 3 (1er étage): 1 lit 140cm"
+  - picture: img/7e1fa9d7-d824-4d70-8aa8-79d98e5d1373.jpg
+    label: "Chambre 3 (1er étage) : 1 lit 140cm"
+  - picture: img/cc1dc37b-2bde-4e06-9af5-da098b4b5d83.webp
+    label: "Chambre 4 (2è étage): 1 lit 140cm"
+  - label: "Chambre 5 (2è étage): 1 canapé convertible 140cm confortable"
+    picture: img/2700223e-773a-4e7e-9400-31e61e7129e9.jpg
+  - label: "2ème étage : Encore une petite bibliothèque à côté des chambres"
+    picture: img/78fd5f01-d48e-48f7-9eb4-29102c59dc1e.jpg
 ---
