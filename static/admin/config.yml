@@ -32,6 +32,7 @@ collections:
         file: src/content/pages/gallery.md
         fields:
           - { name: "type", widget: "hidden", label: "Type", default: "gallery" }
+          - { name: "backgroundImage", label: "Image de fond", widget: "image" }
           - name: "pictures"
             label: "Photos"
             widget: "list"
