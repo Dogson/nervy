@@ -16,6 +16,11 @@
     opacity: 0.4 !important;
     filter: blur(1px);
   }
+
+  &:after {
+    opacity: 0.4 !important;
+    filter: blur(1px);
+  }
 }
 
 .pageTitle {

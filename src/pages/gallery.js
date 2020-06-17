@@ -9,7 +9,6 @@ import cx from "classnames";
 const GalleryPage = ({data: {gallery}}) => {
     const [loaded, setLoaded] = useState(false);
 
-
     const {backgroundImage} = gallery.frontmatter;
     const pictures = gallery.frontmatter.pictures.map((pic) => {
         return {
@@ -17,12 +16,12 @@ const GalleryPage = ({data: {gallery}}) => {
             img: pic.picture.childImageSharp.fluid
         }
     });
-
-    return <Layout brightMenu>
+    return <Layout brightMenu loading={!loaded}>
         <BackgroundImage
             className={classes.galleryContainer}
             Tag="div"
             fluid={backgroundImage.childImageSharp.fluid}
+            onStartLoad={() => setLoaded(false)}
             onLoad={() => setLoaded(true)}
         >
 

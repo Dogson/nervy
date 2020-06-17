@@ -7,13 +7,16 @@ import {Link, LinkWithSubText} from "../components";
 import cx from "classnames";
 
 const IndexPage = ({data: {homepage}}) => {
+    const [loaded, setLoaded] = useState(false);
 
     const {backgroundImage} = homepage.frontmatter;
-    return <Layout>
+    return <Layout loading={!loaded}>
         <BackgroundImage
             className={classes.homepageContainer}
             Tag="div"
             fluid={backgroundImage.childImageSharp.fluid}
+            onStartLoad={() => setLoaded(false)}
+            onLoad={() => setLoaded(true)}
         >
 
             <div className={classes.pageTitle}>
