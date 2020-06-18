@@ -1,7 +1,10 @@
 @import "../styles/global";
 
 .pageContainer {
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  //flex: 1 1 auto;
+  //align-content: start;
 }
 
 .loading {

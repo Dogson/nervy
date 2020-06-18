@@ -24,14 +24,10 @@ const GalleryPage = ({data: {gallery}}) => {
             onStartLoad={() => setLoaded(false)}
             onLoad={() => setLoaded(true)}
         >
-
             <div className={classes.pageTitle}>
-                <h1 className={classes.small}>
-                    Les Prés
-                </h1>
+                <h2>Gallerie</h2>
             </div>
 
-            <h2 className={classes.small}>Gallerie</h2>
 
             <div className={cx(classes.galleryCarousel, {[classes.visible]: loaded})}>
                 <Carousel pictures={pictures}/>
@@ -57,7 +53,7 @@ query {
     label
     picture {
     childImageSharp {
-    fluid(maxHeight: 500) {
+    fluid(maxHeight: 800) {
      ...GatsbyImageSharpFluid
       ...GatsbyImageSharpFluidLimitPresentationSize
 }
