@@ -1,6 +1,6 @@
 ---
 type: gallery
-backgroundImage: img/gallerybackground.jpg
+backgroundImage: img/homepagebackground.jpg
 pictures:
   - picture: img/7413b6e9-6c48-4a13-8e7d-173951a89a8a.webp
   - picture: img/703b1a6d-0183-4c4d-8ae6-f9d19a57f8e0.webp

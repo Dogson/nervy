@@ -17,7 +17,7 @@ const Link = ({mainText, external, to, bright}) => {
                 external ?
                     <a target="_blank" rel="noopener noreferrer" href={to}>{mainText}</a> :
                     to ?
-                        <GatsbyLink to={to}>{mainText}</GatsbyLink> :
+                        <GatsbyLink to={to} activeClassName={classes.active}>{mainText}</GatsbyLink> :
                         <span>{mainText}</span>
             }
         </div>
