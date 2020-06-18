@@ -40,3 +40,10 @@
 .titleLink {
   margin-bottom: 50px;
 }
+
+@media #{$media-laptop} {
+
+  .homepageContainer {
+    height: 600px;
+  }
+}
