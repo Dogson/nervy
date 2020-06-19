@@ -25,9 +25,12 @@
 
 .pageTitle {
   text-align: center;
-  color: $ice-cold;
+  color: $freeze-purple;
+  background-color: rgba($ice-cold, 0.4);
   margin-top: 70px;
-  flex: 0 1 auto;
+  padding: 4px 0px;
+  width: 450px;
+  margin-bottom: 30px;
 }
 
 .galleryCarousel {
@@ -40,7 +43,7 @@
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-  transition: all 0.6s ease-in-out 1.7s;
+  transition: all 0.6s ease-in-out 0.3s;
 
 
   &.visible {

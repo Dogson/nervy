@@ -25,7 +25,7 @@ const GalleryPage = ({data: {gallery}}) => {
             onLoad={() => setLoaded(true)}
         >
             <div className={classes.pageTitle}>
-                <h2>Gallerie</h2>
+                <h2 className={classes.small}>Gallerie</h2>
             </div>
 
 
