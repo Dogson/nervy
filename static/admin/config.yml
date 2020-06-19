@@ -26,7 +26,13 @@ collections:
         fields:
           - { name: "type", widget: "hidden", label: "Type", default: "homepage" }
           - { name: "homeBackgroundImage", label: "Image de fond de la page d'accueil", widget: "image" }
-          - { name: "ardecheBackgroundImage", label: "Image de fond de la section Ardèche", widget: "image" }
+          - { name: "houseBackgroundImage", label: "Image de fond de la section Maison", widget: "image" }
+          - name: "housePictures"
+            label: "Photos Section Maison"
+            widget: "list"
+            fields:
+              - {name: "picture", widget: "image", label: "Photo"}
+              - {name: "label", label: "Légende", required: false}
       - label: Gallerie
         description: "Images et légendes de la gallerie"
         name: gallery

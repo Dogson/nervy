@@ -3,7 +3,7 @@ import {graphql} from "gatsby"
 import BackgroundImage from 'gatsby-background-image'
 import classes from "./index.module.scss"
 import {Layout} from "../layout/layout";
-import {ArrowDown, Link, LinkWithSubText} from "../components";
+import {ArrowDown, Link, LinkWithSubText, PolaroidCard} from "../components";
 import cx from "classnames";
 
 class IndexPage extends React.Component {
@@ -83,7 +83,13 @@ class IndexPage extends React.Component {
     render() {
         const {data: {homepage}} = this.props;
         const {loaded} = this.state;
-        const {ardecheBackgroundImage, homeBackgroundImage} = homepage.frontmatter;
+        let {houseBackgroundImage, homeBackgroundImage, housePictures} = homepage.frontmatter;
+        housePictures = housePictures.map((pic) => {
+            return {
+                label: pic.label,
+                image: pic.picture.childImageSharp.fixed
+            }
+        });
         return <Layout loading={!loaded}>
             <section className={classes.homeSection}
                      ref={this.state.refs[0]}
@@ -123,15 +129,21 @@ class IndexPage extends React.Component {
                 <BackgroundImage
                     className={classes.homepageContainer}
                     Tag="div"
-                    fluid={ardecheBackgroundImage.childImageSharp.fluid}
+                    fluid={houseBackgroundImage.childImageSharp.fluid}
                     onStartLoad={() => this.setState({loaded: false})}
                     onLoad={() => this.setState({loaded: true})}
                 >
 
                     <div className={classes.sectionTitle}>
-                        <h1 className={classes.small}>
-                            Une location <br/>au coeur de l'Ardèche
+                        <h1 className={classes.medium}>
+                            Une grande location <br/>au coeur de l'Ardèche
                         </h1>
+                    </div>
+                    <div className={classes.pictures}>
+                        {housePictures.map((housePicture, i) => {
+                            return <PolaroidCard image={housePicture.image} text={housePicture.label}
+                                                 tiltedRight={i % 2 === 0}/>
+                        })}
                     </div>
                     <div className={classes.nextSectionBtn}>
                         <ArrowDown/>
@@ -157,14 +169,24 @@ export const pageQuery = graphql`
                 }
               }
             }
-             ardecheBackgroundImage {
+             houseBackgroundImage {
               childImageSharp {
                 fluid(maxWidth: 1920) {
                   ...GatsbyImageSharpFluid
                 }
               }
             }
-    }
+            housePictures {
+                label   
+                picture {
+                    childImageSharp {
+                         fixed(width: 300, height: 225) {
+                             ...GatsbyImageSharpFixed
+                       }
+                    }
+                }
+             }
+         }
     }
     }
     `;

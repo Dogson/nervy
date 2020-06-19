@@ -52,13 +52,37 @@
 .sectionTitle {
   width: 100%;
   position: absolute;
-  top: 0px;
   text-align: center;
   color: $russet-red;
   //background-color: rgba($ice-cold, 0.4);
-  margin-top: 70px;
+  top: 125px;
   padding: 4px 0px;
   margin-bottom: 30px;
+}
+//
+//.sectionTitle {
+//  text-align: center;
+//  color: $freeze-purple;
+//  background-color: rgba($russet-red, 0.8);
+//  padding: 10px 5px;
+//  width: 450px;
+//  position: absolute;
+//  top: 140px;
+//  margin-bottom: 30px;
+//
+//  h1 {
+//    text-transform: uppercase;
+//    font-family: 'Raleway', sans-serif;
+//    font-weight: $weight-light;
+//    //margin-top: 10px;
+//    font-size: 25px;
+//    letter-spacing: 3px;
+//  }
+//}
+
+.pictures {
+  display: flex;
+  margin-bottom: 80px;
 }
 
 .nextSectionBtn {
