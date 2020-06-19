@@ -25,7 +25,8 @@ collections:
         file: src/content/pages/homepage.md
         fields:
           - { name: "type", widget: "hidden", label: "Type", default: "homepage" }
-          - { name: "backgroundImage", label: "Image de fond", widget: "image" }
+          - { name: "homeBackgroundImage", label: "Image de fond de la page d'accueil", widget: "image" }
+          - { name: "ardecheBackgroundImage", label: "Image de fond de la section Ardèche", widget: "image" }
       - label: Gallerie
         description: "Images et légendes de la gallerie"
         name: gallery

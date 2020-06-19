@@ -1,4 +1,5 @@
 ---
 type: homepage
-backgroundImage: img/homepagebackground.jpg
+homeBackgroundImage: img/homepagebackground.jpg
+ardecheBackgroundImage: img/gallerybackground.jpg
 ---

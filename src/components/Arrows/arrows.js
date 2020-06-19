@@ -17,4 +17,13 @@ const ArrowLeft = () => {
     </div>
 }
 
-export {ArrowRight, ArrowLeft}
+const ArrowDown = () => {
+    return <div className={classes.arrowDown}>
+        <div className={classes.cta}>
+            <span className={cx(classes.arrowD, classes.primera, classes.next)}/>
+            <span className={cx(classes.arrowD, classes.segunda, classes.next)}/>
+        </div>
+    </div>
+}
+
+export {ArrowRight, ArrowLeft, ArrowDown}

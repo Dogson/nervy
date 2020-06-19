@@ -11,9 +11,10 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  background-attachment: fixed;
 
   &:before {
-    opacity: 0.8 !important;
+    opacity: 0.4 !important;
     filter: blur(1px);
   }
 
@@ -46,4 +47,20 @@
   .homepageContainer {
     height: 600px;
   }
+}
+
+.sectionTitle {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  text-align: center;
+  color: $russet-red;
+  //background-color: rgba($ice-cold, 0.4);
+  margin-top: 70px;
+  padding: 4px 0px;
+  margin-bottom: 30px;
+}
+
+.nextSectionBtn {
+  margin-bottom: 20px;
 }
